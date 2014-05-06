@@ -16,5 +16,6 @@
 //= require bootstrap.min
 //= require modernizr.custom
 //= require library
+//= require scripts
 //= require_tree .
 
