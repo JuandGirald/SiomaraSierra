@@ -696,7 +696,7 @@ nav select {
     -moz-border-radius: 0;
     -webkit-appearance: button;
     -webkit-user-select: none;
-    background-image: url(../images/selectdown.png);
+    background-image: url(../assets/selectdown.png);
     background-position: center right;
     background-repeat: no-repeat;
     text-overflow: ellipsis;
@@ -726,7 +726,7 @@ section {
 #thingsiwrite,
 #stuffimade,
 #getintouch {
-    padding: 165px 0;
+    padding: 165px 0 0;
     min-height: 100%;
     border-bottom: 1px solid #DDD;
 }
@@ -1674,7 +1674,7 @@ figure .text-overlay .info {
 }
 
 .icon-overlay a:hover .icn-more:before {
-    top: 50%!important
+    top: 50%!important;
 }
 
 /* ==========================================================================
