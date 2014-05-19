@@ -28,3 +28,29 @@
 		margin-top: -2em;
 	}
 }
+
+// History
+
+#history{
+	background-color: white;
+	padding-bottom: 4em !important;
+	.section-title {
+		color: #FF7E71;
+		margin-top: 2em;
+		margin-bottom: 1em;
+		i {
+			vertical-align: middle;
+		}
+	}
+}
+.map {
+	img {
+		margin-top: 15%;
+		float: right;
+		width: 95%;
+	}
+}
+
+.history-text {
+	width: 100%;
+}
