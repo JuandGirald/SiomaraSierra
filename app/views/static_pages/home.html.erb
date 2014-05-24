@@ -304,27 +304,41 @@
     <h2 class="sub-title">
       Use the form below to get a quick quote on a project or to simply say hello. I try to be promt and answer any emails within 48 hours. If you send a spam email, I respond with a creative answer.
     </h2>
+
+    <%= render 'shared/error_messages', object: @message %>
+    <% flash.each do |key, value| %>
+      <div class="alert alert-<%= key %>"><%= value %></div>
+    <% end %>
     
     <div class="row">
       <div class="col-sm-8">
-        <form class="contact">
+        <form accept-charset="UTF-8" action="/" id="new_message" method="post" class="new_message contact">
+          <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
           <div class="row">
             <div class="col-sm-6">
               <label class="required" for="name">
                   Tu Nombre
-                  <input type="text" name="name" id="name" placeholder="John Stuart" required>
+                  <input type="text" name="message[name]" id="message_name" placeholder="John Stuart" required>
               </label>
             </div>
             <div class="col-sm-6">
               <label class="required" for="email">
                   Tu Correo
-                  <input type="email" name="email" id="email" placeholder="John@Stuart.com" required>
+                  <input type="email" name="message[email]" id="message_email" placeholder="John@Stuart.com" required>
+              </label>
+            </div>
+          </div>
+           <div class="row">
+            <div class="col-sm-6">
+              <label class="required" for="name">
+                  Asunto
+                  <input type="text" name="message[subject]" id="message_subject" placeholder="John Stuart" required>
               </label>
             </div>
           </div>
           <label class="required">
             Mensaje
-            <textarea rows="7" placeholder="Tengo una idea para un proyecto..." required></textarea>
+            <textarea id="message_body" name="message[body]" rows="7" placeholder="Tengo una idea para un proyecto..." required></textarea>
           </label>
           <div class="add-sm-top text-center">
             <button class="btn btn-danger" type="submit"><i class="fa fa-envelope"></i> &nbsp; ENVIAR COREO</button>

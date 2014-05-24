@@ -1900,7 +1900,7 @@ ul.map-menu li:last-child {
 }
 
 .contact label:hover.required:after {
-    content: "required";
+    content: "requerido";
 }
 
 .contact .submit {
