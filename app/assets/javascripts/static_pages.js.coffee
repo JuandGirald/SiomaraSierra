@@ -6,6 +6,14 @@ $(document).ready ->
 		source = $(this).data("source")
 		$(".modal").find(".modal-content").find("img").attr('src', source)
 
+	#read more function
+	$('.read-more').on 'click', ->
+		$(this).fadeOut()
+		$('.more').slideDown()
+	$('.show-less').on 'click', ->
+		$(this).closest('.more').slideUp()
+		$('.read-more').fadeIn()
+
 	# ==========================================================================
 	#   Scroll To Navigation
 	#   ========================================================================== 
