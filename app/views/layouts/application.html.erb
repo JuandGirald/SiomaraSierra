@@ -16,14 +16,14 @@
 
   <!-- Le CSS
     ================================================== -->
-  <link rel="stylesheet" href="assets/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/picons.css">
-  <link rel="stylesheet" href="assets/style.css">
-
+  <%= stylesheet_link_tag "bootstrap.min" %>
+  <%= stylesheet_link_tag "picons" %>
+  <%= stylesheet_link_tag "style" %>
+  
   <!-- Js -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <script src="assets/modernizr.custom.js"></script>
-  <script src="assets/bootstrap.min.js"></script>
+  <%= javascript_include_tag "modernizr.custom" %>
+  <%= javascript_include_tag "bootstrap.min" %>>
 
   
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
@@ -35,8 +35,8 @@
 
   <%= yield %>
 
-  <script src="assets/library.js"></script>
-  <script src="assets/scripts.js"></script>
+  <%= javascript_include_tag "library" %>
+  <%= javascript_include_tag "scripts" %>
   <script>
       $(function() {
           Grid.init();
