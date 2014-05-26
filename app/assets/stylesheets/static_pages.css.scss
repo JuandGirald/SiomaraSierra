@@ -8,11 +8,10 @@
 
 #slider{
 	.carousel-inner{
-		.image2{
-			background: url("../assets/both.jpg") -46em -32em;
-		}	
 		.image3{
 			background: url("../assets/girl1.jpg") -21em -33em;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
 		}	
 	}
 	
