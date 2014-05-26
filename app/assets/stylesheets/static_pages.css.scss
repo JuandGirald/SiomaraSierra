@@ -6,6 +6,21 @@
 	}
 }
 
+#slider{
+	.carousel-inner{
+		.image1{
+			background: url("../assets/women.jpg") -33em -37em;
+		}	
+		.image2{
+			background: url("../assets/both.jpg") -46em -32em;
+		}	
+		.image3{
+			background: url("../assets/girl1.jpg") -21em -33em;
+		}	
+	}
+	
+}
+
 // Who I am
 .span6 {
 	float: left;
@@ -18,7 +33,11 @@
 .span6.first{
 	margin-right: 2%;
 }
-
+.add-md-top {
+	p{
+		text-align: center;
+	}
+}
 // What we do
 
 .midle-logo{
@@ -33,9 +52,7 @@
 
 .modal-content {
 	margin-top: 5em;
-	img {
-		margin-left: 4em;
-	}
+	text-align: center;
 }
 .portfolio{
 	button.btn.orange{
@@ -60,13 +77,26 @@
 	}
 }
 .map {
+	text-align: center;
 	img {
-		margin-top: 15%;
-		float: right;
-		width: 95%;
+		margin-bottom: 2em;
+		width: 60%;
 	}
 }
 
 .history-text {
 	width: 100%;
+	text-align: justify;
+}
+.more{
+	display: none;
+}
+
+.phrase {
+	color: #FF3366;
+	display: block;
+	float: left;
+	font-size: 18px;
+	text-align: center;
+	width: 15em;
 }
