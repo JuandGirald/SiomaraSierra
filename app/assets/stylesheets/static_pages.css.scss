@@ -6,16 +6,6 @@
 	}
 }
 
-#slider{
-	.carousel-inner{
-		.image3{
-			background: url("../assets/girl1.jpg") -21em -33em;
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-		}	
-	}
-	
-}
 
 // Who I am
 .span6 {
@@ -60,6 +50,10 @@
 }
 // History
 
+aside {
+	text-align: center;
+}
+
 #history{
 	background-color: white;
 	padding-bottom: 4em !important;
@@ -82,7 +76,6 @@
 
 .history-text {
 	width: 100%;
-	text-align: justify;
 }
 .more{
 	display: none;
@@ -95,4 +88,7 @@
 	font-size: 18px;
 	text-align: center;
 	width: 15em;
+	.fa {
+		font-size: 12px;
+	}
 }

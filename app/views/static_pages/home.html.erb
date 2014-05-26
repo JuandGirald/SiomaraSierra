@@ -1,6 +1,6 @@
 
 <%= render 'layouts/analytics' %>
-<header class="slider">
+<header class="full slider">
   <div id="slider" class="carousel slide">
     <!-- Le Carousel Control -->
     <ul class="carousel-indicators">
@@ -10,13 +10,14 @@
     </ul>
     
     <div class="carousel-inner">
-      <div class="item image1 active">
+      <div class="item active">
         <%= image_tag "women.jpg"%>
       </div>
-      <div class="item image2">
+      <div class="item">
         <%= image_tag "both.jpg"%>
       </div>
-      <div class="item image3">
+      <div class="item">
+        <%= image_tag "girl1.jpg"%>
       </div>
     </div>
   </div>
@@ -28,7 +29,7 @@
 </header>
 
 <!-- Le Navigation -->
-<nav>
+<nav class="full">
   <div class="container">
     <div class="row">
       <ul id="top-menu">
@@ -151,7 +152,7 @@
                 <div class="text-overlay">
                   <div class="info">Ver Descripción</div>
                 </div>
-                <img src="assets/1.jpg" alt="">
+                <%= image_tag "1.jpg"%>
               </figure>
             </a>
             <button class="btn orange" data-source="assets/1.jpg" data-toggle="modal" data-target=".bs-example-modal-lg">Zoom</button>
@@ -162,7 +163,7 @@
                 <div class="text-overlay">
                   <div class="info">Ver Descripción</div>
                 </div>
-                <img src="assets/2.jpg" alt="">
+                <%= image_tag "2.jpg"%>
               </figure>
             </a>
             <button class="btn orange" data-source="assets/2.jpg" data-toggle="modal" data-target=".bs-example-modal-lg">Zoom</button>
@@ -173,7 +174,7 @@
                 <div class="text-overlay">
                   <div class="info">Ver Descripción</div>
                 </div>
-                <img src="assets/3.jpg" alt="">
+                <%= image_tag "3.jpg"%>
               </figure>
             </a>
             <button class="btn orange" data-source="assets/3.jpg" data-toggle="modal" data-target=".bs-example-modal-lg">Zoom</button>
@@ -184,7 +185,7 @@
                 <div class="text-overlay">
                   <div class="info">Ver Descripción</div>
                 </div>
-                <img src="assets/4.jpg" alt="">
+                <%= image_tag "4.jpg"%>
               </figure>
             </a>
             <button class="btn orange" data-source="assets/4.jpg" data-toggle="modal" data-target=".bs-example-modal-lg">Zoom</button>
@@ -195,7 +196,7 @@
                 <div class="text-overlay">
                   <div class="info">Ver Descripción</div>
                 </div>
-                <img src="assets/5.jpg" alt="">
+                <%= image_tag "5.jpg"%>
               </figure>
             </a>
             <button class="btn orange" data-source="assets/5.jpg" data-toggle="modal" data-target=".bs-example-modal-lg">Zoom</button>
@@ -206,7 +207,7 @@
                 <div class="text-overlay">
                   <div class="info">Ver Descripción</div>
                 </div>
-                <img src="assets/6.jpg" alt="">
+                <%= image_tag "6.jpg"%>
               </figure>
             </a>
             <button class="btn orange" data-source="assets/6.jpg" data-toggle="modal" data-target=".bs-example-modal-lg">Zoom</button>
@@ -217,7 +218,7 @@
                 <div class="text-overlay">
                   <div class="info">Ver Descripción</div>
                 </div>
-                <img src="assets/7.jpg" alt="">
+                <%= image_tag "7.jpg"%>
              </figure>
             </a>
             <button class="btn orange" data-source="assets/7.jpg" data-toggle="modal" data-target=".bs-example-modal-lg">Zoom</button>
@@ -228,7 +229,7 @@
                 <div class="text-overlay">
                   <div class="info">Ver Descripción</div>
                 </div>
-                <img src="assets/8.jpg" alt="">
+                <%= image_tag "8.jpg"%>
               </figure>
             </a>
             <button class="btn orange" data-source="assets/8.jpg" data-toggle="modal" data-target=".bs-example-modal-lg">Zoom</button>
@@ -239,7 +240,7 @@
                 <div class="text-overlay">
                   <div class="info">Ver Descripción</div>
                 </div>
-                <img src="assets/9.jpg" alt="">
+                <%= image_tag "9.jpg"%>
               </figure>
             </a>
             <button class="btn orange" data-source="assets/9.jpg" data-toggle="modal" data-target=".bs-example-modal-lg">Zoom</button>
@@ -271,7 +272,7 @@
         </p>
         <p class="history-text">
           <div class="phrase">
-            <i class="fa fa-quote-left"></i><i>Una idea clara y potente pronto se transforma en una realidad cercana</i><i class="fa fa-quote-right"></i>.
+            <i class="fa fa-quote-left"></i><i>Una idea clara y potente pronto se transforma en una realidad cercana </i><i class="fa fa-quote-right"></i>.
           </div>
           Los azares de la vida no se dieron a la espera y cuando alguien tiene una convicción de algo no se cansa hasta lograrlo, fue con esta confianza con la que Siomara Sierra se levantó de varias tormentas temporales, para seguir a la delantera con su propio proyecto, en el cual palmo a palmo con esfuerzo y valentía ha visto los frutos.
           <a href="#" class="read-more">Leer mas</a>
