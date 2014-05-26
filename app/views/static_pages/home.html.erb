@@ -114,7 +114,7 @@
     
     <hr />
     <div class="midle-logo">
-      <img src="assets/1.png">  
+      <%= image_tag "1.png" %>  
     </div>
     
   </div>
@@ -291,8 +291,8 @@
     </div>
     <div class="col-sm-6 map text-center">
       <h1 class="section-title">Presencia Nacional</h1>
-      <img src="assets/zonas.png">
-      <img src="assets/mapa.png">
+      <%=image_tag "zonas.png"%>
+      <%=image_tag "mapa.png"%>
     </div>
   </div>
   
@@ -370,10 +370,10 @@
     <div class="social-wrapper">
       <h2>Redes Sociales</h2>
       <div class="social" style="height: 80px;">
-        <div><a target="_blank" href="https://www.facebook.com/SSiomarasierra"><img src="assets/social/facebook.png" alt="Facebook"></a></div>
-        <div><a target="_blank" href="https://twitter.com/SSiomarasierra"><img src="assets/social/twitter.png" alt="Twitter"></a></div>
-        <div><a target="_blank" href="http://instagram.com/ssiomarasierra"><img src="assets/social/instagram.gif" alt="Instagram"></a></div>
-        <div><a target="_blank" href="https://www.youtube.com/channel/UC-ktsjKxx3LpO2oD6V_buBw"><img src="assets/social/youtube.png" alt="Youtube"></a></div>
+        <div><a target="_blank" href="https://www.facebook.com/SSiomarasierra"><%=image_tag "social/facebook.png", alt: "Facebook"%></a></div>
+        <div><a target="_blank" href="https://twitter.com/SSiomarasierra"><%= image_tag "social/twitter.png", alt: "Twitter"%></a></div>
+        <div><a target="_blank" href="http://instagram.com/ssiomarasierra"><%= image_tag "social/instagram.gif", alt: "Instagram"%></a></div>
+        <div><a target="_blank" href="https://www.youtube.com/channel/UC-ktsjKxx3LpO2oD6V_buBw"><%= image_tag "social/youtube.png", alt: "Youtube"%></a></div>
       </div><a class="show-more" href="#" style="display: none;"></a>
     </div>
   </div>
