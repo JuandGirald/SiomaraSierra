@@ -1,4 +1,6 @@
-ready = ->	
+$(document).ready ->
+
+	
 	# Modals
 	$('.portfolio').on 'click', 'button', ->
 		source = $(this).data("source")
@@ -20,9 +22,15 @@ ready = ->
 			$(this).prev("div.widget_container").slideToggle 200
 			return
 
-		$("#widget").on 'click', 'button', ->
-			$("div.widget_container").slideUp() 			
-
+		# reaload the page to fix the imageload problem 
+		$("#widget").on 'click', 'button#en', ->
+			window.location.href='/en'
+			return
+		$("#widget").on 'click', 'button#es', ->
+			window.location.href='/'
+			return
+			
+		
 	# ==========================================================================
 	#   Scroll To Navigation
 	#   ========================================================================== 
@@ -128,6 +136,3 @@ ready = ->
 	    # Set/remove active class
 	    menuItems.parent().removeClass("active").end().filter("[href=#" + id + "]").parent().addClass "active"
 	  return
-
-$(document).ready(ready)
-$(document).on('page:change', ready)
