@@ -37,12 +37,12 @@
     <div class="widget_container">
       <div class="container">
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-sm-4 col-md-offset-4">
             <% if current_page?('/') || current_page?('/es')  %>
-              <a href="/en"><button class="btn btn-lg orange">English </button></a>
+              <a href="/en"><button id="en"  class="btn btn-lg orange">English </button></a>
             <% else %>
                 <a href="/">
-                <button class="btn btn-lg orange"> Español </button></a>
+                <button id="es" class="btn btn-lg orange"> Español </button></a>
             <% end %>
           </div>
         </div>
@@ -56,9 +56,9 @@
   <script src="assets/library.js"></script>
   <script src="assets/scripts.js"></script>
   <script>
-      $(function() {
-          Grid.init();
-      });
+    $(document).ready(function() {
+      Grid.init();
+    });
   </script>
 
 </body>
