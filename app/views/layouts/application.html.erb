@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <title>SiomaraSierra</title>
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -32,6 +32,24 @@
 
 </head>
 <body id="top">
+
+  <div id="widget">
+    <div class="widget_container">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <% if current_page?('/') || current_page?('/es')  %>
+              <a href="/en"><button class="btn btn-lg orange">English </button></a>
+            <% else %>
+                <a href="/">
+                <button class="btn btn-lg orange"> Español </button></a>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="toggle"><i class="fa fa-sort"></i></div> 
+  </div>
 
   <%= yield %>
 

@@ -1,5 +1,4 @@
 SiomaraSierra::Application.routes.draw do
-  get "static_pages/home"
   get "static_pages/help"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -9,7 +8,11 @@ SiomaraSierra::Application.routes.draw do
   match '/',  to: 'static_pages#create',          via: 'post'
   
   # You can have the root of your site routed with "root"
-  root 'static_pages#home'
+  scope "(:locale)", :locale => /es|en/ do
+    root :to => 'static_pages#home'
+    get "static_pages/home"
+  end
+  
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

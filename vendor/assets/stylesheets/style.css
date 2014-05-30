@@ -357,7 +357,6 @@ input[type=radio]:checked::after {
 #widget .widget_container a {
     color: #FFFFFF;
     font-weight: bold;
-    text-decoration: underline;
 }
 
     #widget .widget_container a:hover {
@@ -432,6 +431,10 @@ input[type=radio]:checked::after {
 	transition: all 0.2s linear;
 }
 
+#widget button:active {;
+  background-color: #FA5242 !important;
+  
+}
 #widget button:hover {
     background-color: #A8150C;
     color: #fff;

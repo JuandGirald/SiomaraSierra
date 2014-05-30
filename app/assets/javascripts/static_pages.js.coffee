@@ -1,6 +1,4 @@
-$(document).ready ->
-
-	
+ready = ->	
 	# Modals
 	$('.portfolio').on 'click', 'button', ->
 		source = $(this).data("source")
@@ -13,6 +11,17 @@ $(document).ready ->
 	$('.show-less').on 'click', ->
 		$(this).closest('.more').slideUp()
 		$('.read-more').fadeIn()
+
+
+	# Widget Lenguage Toggle
+	$ ->
+		$("#widget .toggle").click (e) ->
+			e.preventDefault()
+			$(this).prev("div.widget_container").slideToggle 200
+			return
+
+		$("#widget").on 'click', 'button', ->
+			$("div.widget_container").slideUp() 			
 
 	# ==========================================================================
 	#   Scroll To Navigation
@@ -119,3 +128,6 @@ $(document).ready ->
 	    # Set/remove active class
 	    menuItems.parent().removeClass("active").end().filter("[href=#" + id + "]").parent().addClass "active"
 	  return
+
+$(document).ready(ready)
+$(document).on('page:change', ready)

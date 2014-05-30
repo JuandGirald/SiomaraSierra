@@ -13,12 +13,19 @@ $(window).load(function() { // makes sure the whole site is loaded
    Widget Toggle
    ========================================================================== */
 
-$(function() {
-    $('#widget a.toggle').click(function(e){
-        e.preventDefault();
-        $(this).prev("div.widget_container").slideToggle(200);
-    });
-});
+// $(function() {
+//     $('#widget a.toggle').click(function(e){
+//         e.preventDefault();
+//         $(this).prev("div.widget_container").slideDown(200);
+//     });
+//     $('#widget a.toggle').click(function(e){
+//         var wasVisible = $(this).prev("div.widget_container").is(":visible");
+//         e.preventDefault();
+//         if (wasVisible) {
+//           $(this).prev("div.widget_container").slideup(200);
+//         }
+//     });
+// });
 
 /* ==========================================================================
    Parallax Header
