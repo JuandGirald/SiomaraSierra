@@ -8,7 +8,7 @@ class StaticPagesController < ApplicationController
     
     if @message.valid?
       NotificationsMailer.new_message(@message).deliver
-      redirect_to(root_path, :notice => "Su mensaje fue enviado satisfactoriamente.")
+      redirect_to(root_path, :notice => "Su mensaje fue enviado satisfactoriamente. / Your message was sent successfully. ")
     else
       flash.now.alert = "Por favor revise los errores listados"
       render :home
@@ -18,7 +18,7 @@ class StaticPagesController < ApplicationController
   private
 
   	def message_params
-      params.require(:message).permit(:name, :email, :subject,
+      params.require(:message).permit(:name, :email, :subject, :phone
                                    :body)
     end
 end
