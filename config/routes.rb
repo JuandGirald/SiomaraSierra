@@ -3,9 +3,13 @@ SiomaraSierra::Application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
-  match 'contact',  to: 'contact#new',            via: 'get'
-  match 'contact',  to: 'contact#create',          via: 'post'
-  match '/',  to: 'static_pages#create',          via: 'post'
+  match 'contact',       to: 'contact#new',                via: 'get'
+  match 'contact',       to: 'contact#create',             via: 'post'
+  match '/',             to: 'static_pages#create',        via: 'post'
+  match 'kids',          to: 'static_pages#kids',          via: 'get'
+  match 'ninos',         to: 'static_pages#ninos',         via: 'get'
+  match 'deeply_inlove', to: 'static_pages#deeply_inlove', via: 'get'  
+  match '/profundamente_enamorada', to: 'static_pages#profundamente_enamorada', via: 'get'
   
   # You can have the root of your site routed with "root"
   scope "(:locale)", :locale => /es|en/ do

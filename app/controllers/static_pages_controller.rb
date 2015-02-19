@@ -3,6 +3,15 @@ class StaticPagesController < ApplicationController
   	@message = Message.new
   end
 
+  def profundamente_enamorada
+  end
+
+  def ninos
+  end
+
+  def kids
+  end
+
   def create
     @message = Message.new(message_params)
     
