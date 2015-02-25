@@ -8,6 +8,7 @@ SiomaraSierra::Application.routes.draw do
   match '/',             to: 'static_pages#create',        via: 'post'
   match 'kids',          to: 'static_pages#kids',          via: 'get'
   match 'ninos',         to: 'static_pages#ninos',         via: 'get'
+  match 'damas',         to: 'static_pages#damas',         via: 'get'
   match 'deeply_inlove', to: 'static_pages#deeply_inlove', via: 'get'  
   match '/profundamente_enamorada', to: 'static_pages#profundamente_enamorada', via: 'get'
   

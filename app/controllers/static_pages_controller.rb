@@ -12,6 +12,9 @@ class StaticPagesController < ApplicationController
   def kids
   end
 
+  def damas
+  end
+
   def create
     @message = Message.new(message_params)
     
